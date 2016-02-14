@@ -1,0 +1,2 @@
+module KinectHelper
+end
