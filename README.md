@@ -14,4 +14,4 @@ Built With
 http://devpost.com/software/pttechtouch
 
 
-![alt tag](https://raw.githubusercontent.com/vetriselvi/ptTechTouch/upload/MuseLeapBackend/app/assets/images/ptTechTouch.jpg)
+![alt tag](https://raw.githubusercontent.com/vetriselvi/ptTechTouch/blob/master/MuseLeapBackend/app/assets/images/ptTechTouch.jpg)
