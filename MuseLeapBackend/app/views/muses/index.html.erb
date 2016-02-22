@@ -1,20 +1,10 @@
-<h1>Leap Motion JavaScript Sample</h1>
+
 <div id="main">
-  <div id='beforetime'> <%= @muse.beforetime %> </div>
-  <div id='startime'> <%= @muse.startime %> </div>
-  <div id='prevtime'> <%= @muse.prevtime %> </div>
-  <div id='currtime'> <%= @muse.currtime %> </div>
-  <button id="pause" onclick="togglePause()">Pause</button>
-  <input type="checkbox" id="pauseOnGesture" onclick="pauseForGestures()">Pause on gesture</input>
-  <h3>Frame data:</h3>
-  <div id="frameData"></div>
-  <div style="clear:both;"></div>
-  <h3>Hand data:</h3>
-  <div id="handData"></div>
-  <div style="clear:both;"></div>
-  <h3>Finger and tool data:</h3>
-  <div id="pointableData"></div>
-  <div style="clear:both;"></div>
-  <h3>Gesture data:</h3>
-  <div id="gestureData"></div>
+  <div id='beforetime' style='display: none;'> <%= @muse.beforetime %> </div>
+  <div id='startime'  style='display: none;'> <%= @muse.startime %> </div>
+  <div id='prevtime'  style='display: none;'> <%= @muse.prevtime %> </div>
+  <div id='currtime'  style='display: none;'> <%= @muse.currtime %> </div>
+  <div id='output'></div>
+  <div id='progress'></div>
+  <div id='button' onclick= 'switchScreen()' style='display:none;'> Put on your Muse Headband </div>
 </div>

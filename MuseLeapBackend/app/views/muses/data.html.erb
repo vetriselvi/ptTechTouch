@@ -1,0 +1,5 @@
+<div id="chart" align="center">
+<script type="text/javascript">
+  patients = <%= Patient.all.map{|m| m.attributes}.to_json.html_safe %>;
+</script>
+</div>

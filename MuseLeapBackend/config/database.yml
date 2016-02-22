@@ -23,9 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: TreeHacks_development
+  database: Embrace_development
 
-  username: ownzandy
+  username: vetri
 
   password: embrace
 
@@ -62,9 +62,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: TreeHacks_test
+  database: Embrace_test
 
-  username: ownzandy
+  username: vetri
 
   password: embrace
 
@@ -89,6 +89,6 @@ test:
 #
 production:
   <<: *default
-  database: TreeHacks_production
-  username: ownzandy
+  database: Embrace_production
+  username: vetri
   password: <%= ENV['EMBRACE_DATABASE_PASSWORD'] %>

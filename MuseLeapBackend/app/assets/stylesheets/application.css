@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#back-btn {
+	position: relative;
+	padding: 10px 40px;
+  	margin: 20px 10px 10px 0px;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	transform: translateY(250%);
+	transform: translateX(250%);
+	text-decoration: none;	
+}

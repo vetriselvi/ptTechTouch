@@ -1,0 +1,2 @@
+class KinectsController < ApplicationController
+end

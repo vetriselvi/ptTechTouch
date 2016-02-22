@@ -4,8 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'muses#index'
-  resources :muses
-  resources :kinect
+  resources :muses do
+  collection do
+      get :data
+    end
+  end
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

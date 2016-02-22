@@ -7,3 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Muse.create(state: 1, prevtime: 0, currtime: Time.now.to_i, counter: 0)
+Patient.create(rangeofmotion: 20)

@@ -5,11 +5,22 @@ class MusesController < ApplicationController
 
   def index
     @muse = Muse.first
+    @patients = Patient.all
     @muse.beforetime = @muse.startime
     @muse.startime = Time.now.to_i*10
     @muse.save!
   end
 
+  def data
+    @muse = Muse.first
+    @firsttime = @muse.startime
+    @secondtime = @muse.currtime
+    @rangeofmotion = @muse.currtime-@muse.prevtime
+    @patient = Patient.new
+    @patient.rangeofmotion = @rangeofmotion/10
+    @patient.save!
+    @patients = Patient.all
+  end 
   def show 
     @muse = Muse.first
     respond_with(@muse)
@@ -27,9 +38,9 @@ class MusesController < ApplicationController
       @muse.save!
       if @muse.counter == 2
         puts "BlINKED TWICE"
-        redirect_to '/muses/index'
         @muse.counter = 0
         @muse.save!
+        respond_with(@muse)
       else
         respond_with(@muse)
       end
