@@ -12,3 +12,6 @@ Built With
 `python`
 
 http://devpost.com/software/pttechtouch
+
+
+![alt tag](https://raw.githubusercontent.com/vetriselvi/ptTechTouch/upload/MuseLeapBackend/app/assets/images/ptTechTouch.jpg)
